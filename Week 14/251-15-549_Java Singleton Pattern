@@ -1,0 +1,19 @@
+// ID: 251-15-549
+
+class Singleton 
+{
+    private static Singleton singleInstance = null;
+    public String str;
+
+    private Singleton() 
+    {
+    }
+    public static Singleton getSingleInstance() 
+    {
+        if (singleInstance == null) 
+        {
+            singleInstance = new Singleton();
+        }
+        return singleInstance;
+    }
+}
